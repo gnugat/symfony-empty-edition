@@ -1,0 +1,1 @@
+# For each new controller, create a new `app/config/routings/<controller>.yml` routing file, then import it here.

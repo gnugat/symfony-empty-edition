@@ -1,0 +1,6 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: importer.php }
+
+framework:
+    secret: "%secret%"

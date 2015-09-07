@@ -1,0 +1,13 @@
+# Temporary Files
+/app/bootstrap.php.cache
+/app/logs/*
+/app/cache/*
+
+# Configuration
+/app/config/parameters.yml
+/phpunit.xml
+/phpspec.yml
+
+# Third Party libraries
+/vendor/
+/composer.phar
