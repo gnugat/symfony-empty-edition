@@ -1,6 +1,13 @@
 # Symfony Empty Edition
 
-A skeleton to help you bootstrap your Symfony Applications, without the fuss of the standard edition.
+A skeleton allowing you to create an empty Symfony application: it is provided without
+any libraries or bundles (except for Symfony's FrameworkBundle).
+
+You can then start building on it, and install the dependencies you need.
+
+> **Note**: The [Symfony Standard Edition](https://github.com/symfony/symfony-standard)
+> provides a big set of libraries and bundles (database, email, templating, etc).
+> If you don't feel comfortable with picking your own yet, you should probably use it.
 
 ## Installation
 
