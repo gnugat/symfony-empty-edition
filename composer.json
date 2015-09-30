@@ -4,12 +4,10 @@
     "type": "project",
     "description": "The \"Symfony Empty Edition\" distribution",
     "autoload": {
-        "psr-4": { "AppBundle\\": "src/AppBundle" }
+        "psr-4": { "": "src" }
     },
     "autoload-dev": {
-        "psr-4": {
-            "AppBundle\\Tests\\": "tests"
-        }
+        "psr-4": { "Tests\\": "tests" }
     },
     "require": {
         "php": ">=5.3.3",
