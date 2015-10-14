@@ -20,8 +20,17 @@ composer create-project gnugat/symfony-empty-edition my-project
 ## Differences with the Standard Edition
 
 * Only 2 bundles: `src/AppBundle` and `symfony/framework-bundle`, add the ones you really need
-* Only 1 app, change the environment using the `SYMFONY_ENV` environment variable
+* Only 1 front controller (`web/app.php`), change the environment using the `SYMFONY_ENV` environment variable
 * No annotations (can be brought back by installing `sensio/framework-extra-bundle`)
 * Vendor binaries are in `vendor/bin` instead of `bin`, preventing vendor scripts to be to mixed with yours
 * Tests are in `tests` instead of `src/AppBundle/Tests`, preventing to autoload them in production
-* Symfony environment is set using `SYMFONY_ENV` environment variable
+
+## Use cases
+
+There are many real world use cases for this distribution. Here's a small selection:
+
+* tailored made applications: for applications that require "non standard" dependencies (e.g. Propel or Pomm for the database, etc)
+* micro applications: for applications that don't need database, templating or mailing systems (Symfony can be a Micro Framework)
+* legacy migrations: for applications that need to depend on legacy database, templating, etc while migrating to symfony
+* teaching material: [better explained here](http://www.whitewashing.de/2014/04/24/symfony_hello_world.html)
+
