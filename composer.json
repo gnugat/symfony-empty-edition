@@ -12,6 +12,10 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/framework-bundle": "^2.7",
+        "symfony/console": "^2.7",
+        "symfony/finder": "^2.7",
+        "symfony/process": "^2.7",
+        "symfony/yaml": "^2.7",
         "incenteev/composer-parameter-handler": "^2.1"
     },
     "scripts": {
