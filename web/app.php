@@ -2,7 +2,7 @@
 
 use Symfony\Component\HttpFoundation\Request;
 
-require_once __DIR__.'/../app/bootstrap.php';
+require_once __DIR__.'/../app/autoload.php';
 
 $env = getenv('SYMFONY_ENV') ?: 'prod';
 $debug = ('prod' !== $env);

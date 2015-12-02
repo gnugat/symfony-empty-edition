@@ -1,6 +1,13 @@
 # Temporary Files
-/app/logs/*
-/app/cache/*
+/var/*
+
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+
+!/var/logs
+/var/logs/*
+!var/logs/.gitkeep
 
 # Configuration
 /app/config/parameters.yml
