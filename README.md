@@ -22,8 +22,6 @@ composer create-project gnugat/symfony-empty-edition my-project
 * Only 2 bundles: `src/AppBundle` and `symfony/framework-bundle`, add the ones you really need
 * Only 1 front controller (`web/app.php`), change the environment using the `SYMFONY_ENV` environment variable
 * No annotations (can be brought back by installing `sensio/framework-extra-bundle`)
-* Vendor binaries are in `vendor/bin` instead of `bin`, preventing vendor scripts to be to mixed with yours
-* Tests are in `tests` instead of `src/AppBundle/Tests`, preventing to autoload them in production
 
 ## Use cases
 
