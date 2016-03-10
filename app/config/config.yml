@@ -3,7 +3,7 @@ imports:
     - { resource: services/ }
 
 framework:
-    secret: "%secret%"
+    secret: '%secret%'
     router:
-        resource: "%kernel.root_dir%/config/routings/"
+        resource: '%kernel.root_dir%/config/routings/'
         type: directory
