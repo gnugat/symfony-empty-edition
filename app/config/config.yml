@@ -1,8 +1,9 @@
 imports:
     - { resource: parameters.yml }
-    - { resource: importer.php }
+    - { resource: services/ }
 
 framework:
-    secret: "%secret%"
+    secret: '%secret%'
     router:
-        resource: "%kernel.root_dir%/config/routings.yml"
+        resource: '%kernel.root_dir%/config/routings/'
+        type: directory
