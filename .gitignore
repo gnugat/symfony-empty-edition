@@ -10,7 +10,7 @@
 !var/logs/.gitkeep
 
 # Configuration
-/app/config/parameters.yml
+/app/config/parameters.yaml
 
 # Third Party libraries
 /vendor/
