@@ -3,14 +3,15 @@
 
 set_time_limit(0);
 
-require_once __DIR__.'/../app/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
+use App\AppKernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 
 $input = new ArgvInput();
-$env = $input->getParameterOption(array('--env', '-e'), 'dev');
-$debug = !$input->hasParameterOption(array('--no-debug', '')) && $env !== 'prod';
+$env = $input->getParameterOption(['--env', '-e'], 'dev');
+$debug = !$input->hasParameterOption(['--no-debug', '']) && $env !== 'prod';
 
 $kernel = new AppKernel($env, $debug);
 $application = new Application($kernel);

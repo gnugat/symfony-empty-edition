@@ -4,11 +4,10 @@
     "type": "project",
     "description": "The \"Symfony Empty Edition\" distribution",
     "autoload": {
-        "psr-4": { "": "src" },
-        "files": [ "app/AppKernel.php" ]
+        "psr-4": { "App\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests" }
+        "psr-4": { "tests\\": "tests/" }
     },
     "require": {
         "php": "^8.2",

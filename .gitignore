@@ -5,6 +5,9 @@
 /var/cache/*
 !var/cache/.gitkeep
 
+!config/services/.gitkeep
+!config/routings/.gitkeep
+
 !/var/logs
 /var/logs/*
 !var/logs/.gitkeep
