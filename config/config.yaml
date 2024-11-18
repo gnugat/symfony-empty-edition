@@ -1,7 +1,0 @@
-imports:
-    - { resource: services/ }
-
-framework:
-    router:
-        resource: '%kernel.project_dir%/../config/routings/'
-        type: directory
