@@ -1,0 +1,33 @@
+# Allows Route attrbiutes in controllers, for example:
+#
+# ```php
+# <?php
+#                               
+# namespace App\Controller;      
+#
+# use Symfony\Component\HttpFoundation\Request;
+# use Symfony\Component\HttpFoundation\Response;
+# use Symfony\Component\Routing\Attribute\Route;
+#  
+# class SayHelloController         
+# { 
+#     #[Route('/say-hello', methods: ['GET'], name: self::class)]
+#     public function __invoke(Request $request): Response
+#     {
+#         $name = $request->query->get('name', 'world');
+#                               
+#         return new Response(json_encode(['hello' => $name]), 200, [
+#             'Content-Type' => 'application/json',
+#         ]);                    
+#     }   
+# }
+# ```
+controllers:
+    resource:
+        path: ../../src/Controller/     
+        namespace: App\Controller       
+    type: attribute
+
+kernel:
+    resource: App\AppKernel
+    type: attribute
