@@ -11,11 +11,11 @@
         "psr-4": { "Tests\\": "tests" }
     },
     "require": {
-        "php": "^8.0.2",
-        "symfony/console": "^6.0",
-        "symfony/finder": "^6.0",
-        "symfony/framework-bundle": "^6.0",
-        "symfony/yaml": "^6.0",
+        "php": "^8.2",
+        "symfony/console": "^7.0",
+        "symfony/finder": "^7.0",
+        "symfony/framework-bundle": "^7.0",
+        "symfony/yaml": "^7.0",
         "incenteev/composer-parameter-handler": "^2.2"
     },
     "scripts": {
